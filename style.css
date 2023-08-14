@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+section {
+    display: flex;
+}
+section .txt {
+    color: chocolate;
+    font-size: 60px;
+    font-weight: 400px;
+    margin-top: 10px;
+}
+section .run-txt {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-size: 60px;
+    margin-top: -1px;
+}
+.run-txt li {
+   list-style: none;
+   color: cyan;
+   font-weight: 400px;
+   position: relative;
+   top: 0;
+   animation: slide 30s steps(10) infinite;
+}
+@keyframes slide {
+    100% {
+        top: -900px;
+        color: cornflowerblue;
+    }
+}
+.run-txt li span {
+    position: relative;
+    margin: 15px 0;
+    line-height: 90px;
+}
+ .run-txt li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: #000;
+    border-left: 3px solid cyan;
+    margin-top: 13px;
+    animation: typing 3s steps(12) infinite;
+    height: 100%;
+    width: 100%;
+}
+@keyframes typing {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+} 
+
+  
+  
